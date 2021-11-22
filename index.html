@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Grading Dashboard</title>
+	<style>
+	<link rel="stylesheet" href="styles.css">
+
+	body {background-color: snow;}
+	h1   {color: firebrick;}
+	h2   {color: black;}
+	p    {color:  black;}
+
+	table {margin: .6em;
+   		  width: 150px; }
+          
+    table {font-family: arial, sans-serif;
+  			border-collapse: collapse;
+  			width: 95%;}
+
+	td, th {border: 1px solid #dddddd;
+  			text-align: left;
+ 			padding: 6px;}
+
+	tr:nth-child(even) {background-color: #dddddd;}
+    
+    #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+  
+</style>	
+</head>
+<body>
+
+	<h1>University Student Grading Dashboard</h1>
+	<h2> Welcome!</h2>  
+	<p>Please click the below button to view student grades:</p>
+    
+ 
+<button onclick="myFunction()">Load Student Grades</button>
+
+<div id="Grades Table">
+ <table>
+  <tr id="trHeader">
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Algebra</th>
+    <th>Calculus</th>
+    <th>Programming</th>
+    <th>Databases</th>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Soap</td>
+    <td class="centerCell">92</td>
+    <td class="centerCell">78</td>
+    <td class="centerCell">65</td>
+    <td class="centerCell">67</td>   
+  </tr>
+  <tr>
+   <td>Jane</td>
+    <td>Doe</td>
+    <td class="centerCell">81</td>
+    <td class="centerCell">79</td>
+    <td class="centerCell">83</td>
+    <td class="centerCell">89</td>  
+  </tr>
+  <tr>
+  <td>Mary</td>
+    <td>Poppins</td>
+    <td class="centerCell">63</td>
+    <td class="centerCell">52</td>
+    <td class="centerCell">65</td>
+    <td class="centerCell">71</td>  
+  </tr>
+  <tr>
+  <td>Mario</td>
+    <td>Rossi</td>
+    <td class="centerCell">23</td>
+    <td class="centerCell">42</td>
+    <td class="centerCell">50</td>
+    <td class="centerCell">44</td>  
+  </tr>
+  <tr>
+  <td>John</td>
+    <td>Smith</td>
+    <td class="centerCell">56</td>
+    <td class="centerCell">67</td>
+    <td class="centerCell">72</td>
+    <td class="centerCell">72</td>  
+   </tr>
+  <tr>
+   <td>Tom</td>
+    <td>Cruz</td>
+    <td class="centerCell">81</td>
+    <td class="centerCell">62</td>
+    <td class="centerCell">53</td>
+    <td class="centerCell">59</td>  
+  </tr>
+  <tr>
+   <td>Jim</td>
+    <td>Beglin</td>
+    <td class="centerCell">41</td>
+    <td class="centerCell">48</td>
+    <td class="centerCell">51</td>
+    <td class="centerCell">53</td>  
+  </tr>
+  <tr>
+   <td>Peter</td>
+    <td>Shmooks</td>
+    <td class="centerCell">55</td>
+    <td class="centerCell">55</td>
+    <td class="centerCell">66</td>
+    <td class="centerCell">58</td>  
+  </tr>
+  <tr>
+   <td>Hans</td>
+    <td>Meier</td>
+    <td class="centerCell">57</td>
+    <td class="centerCell">87</td>
+    <td class="centerCell">95</td>
+    <td class="centerCell">64</td>  
+  </tr>
+   <tr>
+   <td>Jackie</td>
+    <td>Brown</td>
+    <td class="centerCell">97</td>
+    <td class="centerCell">91</td>
+    <td class="centerCell">86</td>
+    <td class="centerCell">73</td>
+   </tr>
+</table>
+
+</div>
+
+<p><b>Note:</b> The average grades have not yet been allocated.
+<script>
+function myFunction() {
+  var x = document.getElementById("Grades Table");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    
+</body>
+</html>
+
+
